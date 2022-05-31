@@ -1,1 +1,1 @@
-# Credo_Social_Payment_Hackathon
+# Credo Social Payment Hackathon
