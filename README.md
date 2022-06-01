@@ -38,7 +38,6 @@ Using an Apriori algorithm to find out frequent items that are bought together w
 
 # Deployment and Application
 We have deployed the app using Streamlit: [Product Recommendation App](https://share.streamlit.io/aadedolapo/credo-social-payment-hackathon/main/app.py).
-Using this app.
  
 
-Team Localhost
+## Team Localhost
