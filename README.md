@@ -22,10 +22,10 @@ Using an Apriori algorithm to find out frequent items that are bought together w
 * Deployed the app using @streamlit .
 
 # Files Description
-* [Properties.csv](https://github.com/aadedolapo/House-Prices-Prediction-Model/blob/main/Global_Superstore2.csv): webscraped data 
-* [Credo_Social_Payment_Hackathon.ipynb](https://github.com/aadedolapo/House-Prices-Prediction-Model/blob/main/House%20prices%20prediction.ipynb) : notebook with feature engineering, product recommendation engine, testing and model evaluation
-* [app.py](https://github.com/aadedolapo/House-Prices-Prediction-Model/blob/main/webapp.py) : contains script to run the app on streamlit cloud
-* [Requirements.txt](https://github.com/aadedolapo/House-Prices-Prediction-Model/blob/main/requirements.txt) : dependencies for streamlit application
+* [Global_Superstore2.csv](https://github.com/aadedolapo/Credo-Social-Payment-Hackathon/blob/main/Global_Superstore2.csv): Data 
+* [Credo_Social_Payment_Hackathon.ipynb](https://github.com/aadedolapo/Credo-Social-Payment-Hackathon/blob/main/House%20prices%20prediction.ipynb) : notebook with feature engineering, product recommendation engine, testing and model evaluation
+* [app.py](https://github.com/aadedolapo/Credo-Social-Payment-Hackathon/blob/main/app.py) : contains script to run the app on streamlit cloud
+* [Requirements.txt](https://github.com/aadedolapo/Credo-Social-Payment-Hackathon/blob/main/requirements.txt) : dependencies for streamlit application
 
 # Technologies Used:
 * Python
