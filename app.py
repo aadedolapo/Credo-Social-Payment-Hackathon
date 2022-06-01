@@ -6,7 +6,7 @@ from random import randint
 from sklearn.metrics.pairwise import cosine_similarity, linear_kernel
 
 def load_data(data):
-    df = pd.read_csv(data, encoding='unicode_escape')[:30000]
+    df = pd.read_csv(data, encoding='unicode_escape') #[:30000]
     return df
 
 df = load_data("Global_Superstore2.csv")
