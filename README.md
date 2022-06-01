@@ -7,7 +7,7 @@ Using an Apriori algorithm to find out frequent items that are bought together w
 ![GitHub last commit](https://img.shields.io/github/last-commit/aadedolapo/Credo-Social-Payment-Hackathon)
 
 # Table of contents
-- [Project Title](#Product Recommendation System)
+- [Project Title](#Product-Recommendation-System)
 - [Table of contents](#table-of-contents)
 - [Project Process](#Project-Process)
 - [Files Description](#Files-Description)
