@@ -23,7 +23,7 @@ Using an Apriori algorithm to find out frequent items that are bought together w
 
 # Files Description
 * [Global_Superstore2.csv](https://github.com/aadedolapo/Credo-Social-Payment-Hackathon/blob/main/Global_Superstore2.csv): Data 
-* [Credo_Social_Payment_Hackathon.ipynb](https://github.com/aadedolapo/Credo-Social-Payment-Hackathon/blob/main/Credo%20Social%20Payment%20Hackathon.ipynb) : notebook with feature engineering, product recommendation engine, testing and model evaluation
+* [Credo_Social_Payment_Hackathon.ipynb](https://github.com/aadedolapo/Credo-Social-Payment-Hackathon/blob/main/Credo_Social_Payment_Hackathon.ipynb) : notebook with feature engineering, product recommendation engine, testing and model evaluation
 * [app.py](https://github.com/aadedolapo/Credo-Social-Payment-Hackathon/blob/main/app.py) : contains script to run the app on streamlit cloud
 * [Requirements.txt](https://github.com/aadedolapo/Credo-Social-Payment-Hackathon/blob/main/requirements.txt) : dependencies for streamlit application
 
