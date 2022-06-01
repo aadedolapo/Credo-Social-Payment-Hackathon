@@ -17,7 +17,7 @@ Using an Apriori algorithm to find out frequent items that are bought together w
 
 # Project Process
 * Data collected from kaggle 
-* Perfomred EDA, Data cleaning, and Manipulation
+* Performed EDA, Data cleaning, and Manipulation
 * Built a Product Recommendation System using item-based Collaborative Filtering and Cosine Similarity as the metric.
 * Deployed the app using @streamlit .
 
@@ -37,7 +37,7 @@ Using an Apriori algorithm to find out frequent items that are bought together w
 
 
 # Deployment and Application
-I have deployed the app using Streamlit: [Product Recommendation App](https://share.streamlit.io/aadedolapo/credo-social-payment-hackathon/main/app.py).
+We have deployed the app using Streamlit: [Product Recommendation App](https://share.streamlit.io/aadedolapo/credo-social-payment-hackathon/main/app.py).
 Using this app.
  
 
