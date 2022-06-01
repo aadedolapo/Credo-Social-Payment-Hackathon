@@ -6,7 +6,7 @@ from random import randint
 from sklearn.metrics.pairwise import cosine_similarity, linear_kernel
 
 def load_data(data):
-    df = pd.read_csv(data, encoding='unicode_escape')#[:40000]
+    df = pd.read_csv(data, encoding='unicode_escape')[:30000]
     return df
 
 df = load_data("Global_Superstore2.csv")
@@ -32,7 +32,7 @@ recommendations = pd.DataFrame(product_recs)
 recommendations.index = cos_score_df.index  
  
 @st.cache   
-def get_recommendations(item):
+def get_recommendations(df,item):
     """Generate a set of product recommendations using item-based collaborative filtering.
 
     Args:
@@ -42,10 +42,10 @@ def get_recommendations(item):
     Returns: 
         recommendations (dataframe): Pandas dataframe containing product recommendations. 
     """
-    recs_products = list(recommendations.loc[item])
+    recs_products = list(df.loc[item])
     
-    url = ['https://'+each +'.com' for each in recommendations.loc[item].str.replace(' ','')]
-    price = [randint(100,1000) for _ in range(len(recommendations.loc[item]))]
+    url = ['https://'+each +'.com' for each in df.loc[item].str.replace(' ','')]
+    price = [randint(100,1000) for _ in range(len(df.loc[item]))]
     
     result = pd.DataFrame(url,recs_products, columns=['Url']).reset_index().rename(columns={'index':'Recommended Products'})
     result['Price'] =price
@@ -63,8 +63,8 @@ box-shadow:0 0 15px 5px #ccc; background-color: #a8f0c6;
 """
 
 @st.cache
-def search_term_if_not_found(term,df):
-	result_df = df[df['Product Name'].str.contains(term)]
+def search_term_if_not_found(search_term,df):
+	result_df = df[df['Product Name'].str.contains(search_term)]
 	return result_df['Product Name']
 
 def main():
@@ -72,9 +72,7 @@ def main():
     
     menu = ["Home", "Recommend", "About"]
     choice= st.sidebar.selectbox("Menu", menu)
-    
-    
-    
+      
     if choice == "Home":
         st.subheader("Home")
         st.dataframe(df.head(10))
@@ -84,7 +82,7 @@ def main():
         if st.button("Recommend"):
             if search_term is not None:
                 try:
-                    results = get_recommendations(search_term)
+                    results = get_recommendations(recommendations,search_term)
                     for row in results.iterrows():
                       rec_product = row[1][0]
                       rec_url = row[1][1]
