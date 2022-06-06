@@ -64,7 +64,7 @@ box-shadow:0 0 15px 5px #ccc; background-color: #a8f0c6;
 
 @st.cache
 def search_term_if_not_found(search_term,df):
-	result_df = df[df['Product Name'].str.contains(search_term)]
+	result_df = df[df['Product Name'].str.contains(search_term)].drop_duplicates()
 	return result_df['Product Name']
 
 def main():
