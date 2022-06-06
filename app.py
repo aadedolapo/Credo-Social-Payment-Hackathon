@@ -64,8 +64,8 @@ box-shadow:0 0 15px 5px #ccc; background-color: #a8f0c6;
 
 @st.cache
 def search_term_if_not_found(search_term,df):
-	result_df = df[df['Product Name'].str.contains(search_term)].drop_duplicates()
-	return result_df['Product Name']
+	result_df = df[df['Product Name'].str.contains(search_term)]
+	return result_df['Product Name'].drop_duplicates()
 
 def main():
     st.title("Product Recommendation App")
